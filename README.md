@@ -26,7 +26,16 @@ You should have a `burp-empty-cookie-jar-VERSION.jar` file in the
 `build/libs/` folder.  Load it within Burp and you are good to go.
 
 ## Loading Instructions
-Launch BurpSuite, go to the Extender tab and then open the Extensions tab and
-click on "Add". In the dialog window, select "java" as Extension Type and select
-the burp-template.jar. For further details about BurpSuite extensions, refer
+1. Download latest [release](https://github.com/praetorianlabs-amarquez/burp-empty-cookie-jar/releases) 
+or compile using instructions above.
+2. Launch BurpSuite, go to the Extender tab and then open the Extensions tab and
+click on "Add". 
+3. In the dialog window, select "java" as Extension Type and select the 
+downloaded jar file. 
+4. Where appropriate, under the `Options->Sessions` tab, click `Add` button 
+under the *Session Handling Rules*
+5. Click `Add` button under *Rule Actions* and then select `Invoke a Burp extension` 
+
+
+For further details about BurpSuite extensions, refer
 to their [documentation](https://portswigger.net/burp/help/extender.html#loading).
